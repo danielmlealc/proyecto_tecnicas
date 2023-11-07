@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DD_My_Money
+namespace DD_My_Money.Model
 {
-    internal class BilleterasvIRTUALES
+    internal class SavingsAccount : Account
     {
-
-        int celular;
-        
     }
 }
