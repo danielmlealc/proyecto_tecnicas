@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DD_My_Money.Model
 {
-    internal class CreditsCards : Account
+    public class CreditsCards : Account
     {
         public decimal InterestRate { get; set; }
         public decimal HandlingFee { get; set;}

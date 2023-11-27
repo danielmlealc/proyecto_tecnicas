@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DD_My_Money.Model
 {
-    internal class SavingsAccount : Account
+    public class SavingsAccount : Account
     {
     }
 }

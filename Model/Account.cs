@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace DD_My_Money.Model
 {
-    internal class Account
+    public class Account
     {
-        public string Owner { get; set; }
+        public string Entity { get; set; }
         public decimal Balace { get; set; }
 
-        public virtual void Depositar(decimal amount)
+        public virtual void AddMoney(decimal amount)
         {
             Balace += amount;
         }
 
-        public virtual void Retirar(decimal amount)
+        public virtual void RemoveMoney(decimal amount)
         {
             Balace -= amount;
         }

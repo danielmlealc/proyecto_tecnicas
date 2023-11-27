@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DD_My_Money
 {
-    class User
+    class Userd
     {
         public string Name { get; set; }
         public int Age { get; set; }
@@ -14,14 +14,18 @@ namespace DD_My_Money
         public string Phone { get; set; }
         public List<Wallet> Wallets { get; set; }
 
-        public User(string name, int age, string email, string phone)
-        {
-            Name = name;
-            Age = age;
-            Email = email;
-            Phone = phone;
-            Wallets = new List<Wallet>();
-        }
+        //public User(string name, int age, string email, string phone)
+        //{
+        //    Name = name;
+        //    Age = age;
+        //    Email = email;
+        //    Phone = phone;
+        //    Wallets = new List<Wallet>();
+        //}
+
+        //public User(string v1, string v2)
+        //{
+        //}
     }
 
 }

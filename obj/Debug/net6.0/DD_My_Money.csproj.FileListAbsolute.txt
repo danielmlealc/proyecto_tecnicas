@@ -12,3 +12,17 @@ C:\Users\usuario\source\repos\DD_My_Money\obj\Debug\net6.0\refint\DD_My_Money.dl
 C:\Users\usuario\source\repos\DD_My_Money\obj\Debug\net6.0\DD_My_Money.pdb
 C:\Users\usuario\source\repos\DD_My_Money\obj\Debug\net6.0\DD_My_Money.genruntimeconfig.cache
 C:\Users\usuario\source\repos\DD_My_Money\obj\Debug\net6.0\ref\DD_My_Money.dll
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\obj\Debug\net6.0\DD_My_Money.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\obj\Debug\net6.0\DD_My_Money.AssemblyInfoInputs.cache
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\obj\Debug\net6.0\DD_My_Money.AssemblyInfo.cs
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\obj\Debug\net6.0\DD_My_Money.csproj.CoreCompileInputs.cache
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\obj\Debug\net6.0\DD_My_Money.dll
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\obj\Debug\net6.0\refint\DD_My_Money.dll
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\obj\Debug\net6.0\DD_My_Money.pdb
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\bin\Debug\net6.0\DD_My_Money.exe
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\bin\Debug\net6.0\DD_My_Money.deps.json
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\bin\Debug\net6.0\DD_My_Money.runtimeconfig.json
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\bin\Debug\net6.0\DD_My_Money.dll
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\bin\Debug\net6.0\DD_My_Money.pdb
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\obj\Debug\net6.0\DD_My_Money.genruntimeconfig.cache
+C:\Users\Andy\Documents\GitHub\proyecto_tecnicas\obj\Debug\net6.0\ref\DD_My_Money.dll
