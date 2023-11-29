@@ -11,16 +11,8 @@ namespace DD_My_Money.Controllers
     {
         public void Create(User user, string banckName, decimal balance)
         {
-            // Verificar si el usuario ya tiene una cuenta del mismo tipo.
-            //if (cuentasFinancieras.Exists(c => c.Titular == usuario && c.GetType() == cuenta.GetType()))
-            //{
-            //Console.WriteLine($"El usuario ya tiene una cuenta {cuenta.GetType().Name}.");
-            //return;
-            //}
-
             var account = new SavingsAccount();
 
-            // Asignar el titular a la cuenta y agregarla a la lista.
             account.Entity = banckName;
             account.Balace = balance;
 
@@ -40,7 +32,7 @@ namespace DD_My_Money.Controllers
                 Console.WriteLine($"Cuentas financieras de {user.Name}:");
                 foreach (var account in user.Accounts)
                 {
-                    Console.WriteLine($"{account.Entity}: Saldo: {account.Balace}");
+                    Console.WriteLine($"{account.Entity} - Saldo: {account.Balace}");
                 }
             }
         }

@@ -14,7 +14,7 @@ namespace DD_My_Money.Model
         public string Password { get; set; }
 
         public List<SavingsAccount> Accounts { get; set; } = new List<SavingsAccount>();
-        public List<CreditsCards> CreditsCards { get; set; }
-        public List<Credit> Credits { get; set; }
+        public List<CreditsCards> CreditsCards { get; set; } = new List<CreditsCards>();
+        public List<Credit> Credits { get; set; } = new List<Credit>();
     }
 }

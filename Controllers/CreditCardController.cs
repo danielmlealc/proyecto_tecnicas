@@ -11,12 +11,25 @@ namespace DD_My_Money.Controllers
     {
         public void Create(User user, CreditsCards card)
         {
+            user.CreditsCards.Add(card);
 
+            Console.WriteLine($"Tarjeta de crédito {card.Entity} agregada con éxito al usuario {user.Name}.");
         }
 
-        public void CreditsCards(User user)
+        public void ShowCreditsCard(User user)
         {
-
+            if (user.Accounts.Count == 0)
+            {
+                Console.WriteLine($"El usuario {user.Name} no tiene cuentas financieras registradas.");
+            }
+            else
+            {
+                Console.WriteLine($"Cuentas financieras de {user.Name}:");
+                foreach (var account in user.Accounts)
+                {
+                    Console.WriteLine($"{account.Entity} - Saldo: {account.Balace}");
+                }
+            }
         }
     }
 }

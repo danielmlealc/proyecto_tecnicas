@@ -100,7 +100,7 @@ namespace DD_My_Money
                         break;
 
                     case "2":
-                        // Implementar lógica para agregar una deuda.
+                        AddCredit(user);
                         break;
 
                     case "3":
@@ -154,6 +154,25 @@ namespace DD_My_Money
         {
             var savingAccountController = new SavingAccountController();
             savingAccountController.ShowAccounts(user);
+        }
+
+        static void AddCredit(User user)
+        {
+
+        }
+
+        static void AddCreaditCard(User user)
+        {
+            var creaditCard = new CreditsCards();
+
+            Console.Write("Nombre: ");
+            creaditCard.Name = Console.ReadLine();
+            Console.Write("Entidad bancaria: ");
+            creaditCard.Entity = Console.ReadLine();
+            Console.Write(": ");
+            creaditCard.Balace = balance;
+            creaditCard.InterestRate = 0;
+            creaditCard.HandlingFee = 0;
         }
     }
 }

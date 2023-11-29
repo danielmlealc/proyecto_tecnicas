@@ -10,5 +10,6 @@ namespace DD_My_Money.Model
     {
         public decimal InterestRate { get; set; }
         public decimal HandlingFee { get; set;}
+        public string Name { get; set; }
     }
 }
