@@ -9,32 +9,25 @@ namespace DD_My_Money.Controllers
 {
     internal class CreditController
     {
-        public void Create(User user, string banckName, decimal balance)
+        public void Create(User user, Credit credit)
         {
-            var account = new Credit();
+            user.Credits.Add(credit);
 
-            account.Entity = banckName;
-            account.Balace = balance;
-            account.Amount = balance;
-            account.InterestRate = 0;
-
-            user.Accounts.Add(account);
-
-            Console.WriteLine($"Cuenta {account.Entity} agregada con éxito al usuario {user.Name}.");
+            Console.WriteLine($"Deuda {credit.Entity} agregada con éxito al usuario {user.Name}.");
         }
 
-        public void ShowAccounts(User user)
+        public void ShowCredits(User user)
         {
-            if (user.Accounts.Count == 0)
+            if (user.Credits.Count == 0)
             {
                 Console.WriteLine($"El usuario {user.Name} no tiene cuentas financieras registradas.");
             }
             else
             {
                 Console.WriteLine($"Cuentas financieras de {user.Name}:");
-                foreach (var account in user.Accounts)
+                foreach (var account in user.Credits)
                 {
-                    Console.WriteLine($"{account.Entity} - Saldo: {account.Balace}");
+                    Console.WriteLine($"{account.Entity} - Deuda: {account.Balace}");
                 }
             }
         }

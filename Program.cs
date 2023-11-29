@@ -104,7 +104,7 @@ namespace DD_My_Money
                         break;
 
                     case "3":
-                        // Implementar lógica para agregar una tarjeta de crédito.
+                        AddCreaditCard(user);
                         break;
 
                     case "4":
@@ -112,11 +112,11 @@ namespace DD_My_Money
                         break;
 
                     case "5":
-                        // Implementar lógica para ver deudas.
+                        ShowCredits(user);
                         break;
 
                     case "6":
-                        // Implementar lógica para ver tarjetas de crédito.
+                        ShowCreditCards(user);
                         break;
 
                     case "7":
@@ -158,7 +158,27 @@ namespace DD_My_Money
 
         static void AddCredit(User user)
         {
+            var creadit = new Credit();
 
+            Console.Write("Nombre: ");
+            creadit.Entity = Console.ReadLine();
+            Console.Write("Deuda: ");
+            string balance = Console.ReadLine();
+            decimal.TryParse(balance, out decimal amount);
+            creadit.Balace = amount;
+            Console.Write("Tasa de interés: ");
+            string interestRate = Console.ReadLine();
+            decimal.TryParse(interestRate, out decimal interest);
+            creadit.InterestRate = interest;
+
+            var creditController = new CreditController();
+            creditController.Create(user, creadit);
+        }
+
+        static void ShowCredits(User user)
+        {
+            var creditController = new CreditController();
+            creditController.ShowCredits(user);
         }
 
         static void AddCreaditCard(User user)
@@ -169,10 +189,27 @@ namespace DD_My_Money
             creaditCard.Name = Console.ReadLine();
             Console.Write("Entidad bancaria: ");
             creaditCard.Entity = Console.ReadLine();
-            Console.Write(": ");
-            creaditCard.Balace = balance;
-            creaditCard.InterestRate = 0;
-            creaditCard.HandlingFee = 0;
+            Console.Write("Cupo: ");
+            string balance = Console.ReadLine();
+            decimal.TryParse(balance, out decimal amount);
+            creaditCard.Balace = amount;
+            Console.Write("Tasa de interés: ");
+            string interestRate = Console.ReadLine();
+            decimal.TryParse(interestRate, out decimal interest);
+            creaditCard.InterestRate = interest;
+            Console.Write("Cuota de manejo: ");
+            string handlingFee = Console.ReadLine();
+            decimal.TryParse(handlingFee, out decimal handling);
+            creaditCard.HandlingFee = handling;
+
+            var creditCardController = new CreditCardController();
+            creditCardController.Create(user, creaditCard);
+        }
+
+        static void ShowCreditCards(User user)
+        {
+            var creditCardController = new CreditCardController();
+            creditCardController.ShowCreditsCard(user);
         }
     }
 }

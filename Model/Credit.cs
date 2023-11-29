@@ -8,7 +8,6 @@ namespace DD_My_Money.Model
 {
     public class Credit : Account
     {
-        public decimal Amount { get; set; }
         public decimal InterestRate { get; set; }
     }
 }
